@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "deteccao-passaros"
+version = "0.1.0"
+description = "Projeto de detecção de pássaros com YOLOv8 - Visão Computacional"
+authors = ["Aluno <aluno@uniara.edu.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ultralytics = "^8.0"
+numpy = "^1.24"
+opencv-python = "^4.8"
+requests = "^2.31"
+matplotlib = "^3.7"
+Pillow = "^10.0"
+torch = {version = "2.5.1", source = "pytorch_cpu"}
+torchvision = {version = "0.20.1", source = "pytorch_cpu"}
+torchaudio = {version = "2.5.1", source = "pytorch_cpu"}
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0"
+ipykernel = "^6.25"
+
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

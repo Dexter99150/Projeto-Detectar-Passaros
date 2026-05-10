@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 8
+names: ['Estornino', 'canario', 'cernicalo', 'curruca', 'golondrina', 'gorrion', 'vencejo', 'verdecillo']
+
+roboflow:
+  workspace: birdx-zrczv
+  project: bird-species-cz5yl
+  version: 6
+  license: Private
+  url: https://universe.roboflow.com/birdx-zrczv/bird-species-cz5yl/dataset/6
